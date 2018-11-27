@@ -9,8 +9,6 @@ class Binary {
 private:
 
     bool open;
-    int running;
-
 
 public:
 

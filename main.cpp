@@ -8,9 +8,8 @@ int main() {
     Counting* semaphoreCounting = new Counting();
     Binary* semaphoreBinary = new Binary();
 
-    while(true) {
-        bool counting = false;
-        bool binary = false;
+    bool counting = false;
+    bool binary = false;
 
         std::cin >> input;
         if(!input.compare("counting"))  {
@@ -71,7 +70,6 @@ int main() {
                 std::cout << "unknown command";
             }
         }
-    }
 
     return 0;
 }

@@ -3,13 +3,11 @@
 
 Binary::Binary() {
     open = true;
-    running = 0;
 }
 
 bool Binary::V() {
-    open = true;
-    if(running > 0) {
-        running -= 1;
+    if(!open)    {
+        open = true;
         return true;
     }
     return false;
@@ -17,10 +15,7 @@ bool Binary::V() {
 
 bool Binary::P() {
     if(open)    {
-        running += 1;
-        if(running == 10)   {
-            open = false;
-        }
+        open = false;
         return  true;
     }
     return false;

@@ -7,6 +7,7 @@
 class Counting {
 
 private:
+
     int counter;
     int queue;
     bool blocked;
