@@ -27,14 +27,12 @@ bool Counting::P() {
 }
 
 bool Counting::V() {
-    if(blocked) {
-        unblock();
-    }
     if(counter < 10) {
         if(queue > 0)   {
             queue -= 1;
         } else {
             counter += 1;
+            unblock();
         }
     } else {
         return false;
